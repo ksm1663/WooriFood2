@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/laySearchMain"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryDarkColor_blue"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/EditTextMyStyleOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:boxBackgroundColor="@color/white"
+            app:helperText="">
+
+<!--            android:hint="@string/textSearchHint"-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textBranch"
+                style="@style/EditTextMyStyleOutline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="60dp"
+                android:imeOptions="actionSearch"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.skydoves.transformationlayout.TransformationLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            app:transformation_duration="550">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnMap"
+                style="@style/FloatActionMyStyleOutLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right|center_vertical"
+                android:layout_margin="16dp"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_baseline_pin_drop_24"
+                app:tint="@null" />
+        </com.skydoves.transformationlayout.TransformationLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSearch"
+            style="@style/ButtonMyStyle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:textSize="17sp"
+            android:text="@string/textSearchSikdang"
+            android:layout_marginEnd="15dp"/>
+    </FrameLayout>
+
+    <!-- 리스트 (리사이클러뷰) 부분  -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeSearchList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sikdangList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/non_item"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="검색 결과가\n없습니다."
+            android:textColor="@color/primaryLightColor_blue"
+            android:textAlignment="center"
+            android:textSize="50dp"/>
+        <ImageView
+            android:id="@+id/non_item_img"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:tint="@color/white"
+            android:visibility="gone"
+            android:src="@drawable/ic_food_search_"
+            />
+
+    </FrameLayout>
+
+
+</LinearLayout>

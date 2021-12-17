@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/page_1"
+        android:enabled="true"
+        android:icon="@drawable/ic_navi_1"
+        android:iconTint="@color/primaryColor_red"
+        android:title="인근맛집" />
+    <item
+        android:id="@+id/page_2"
+        android:enabled="true"
+        android:icon="@drawable/ic_navi_2"
+        android:iconTint="@color/primaryColor_red"
+        android:title="식당검색" />
+    <item
+        android:id="@+id/page_3"
+        android:enabled="true"
+        android:icon="@drawable/ic_navi_3"
+        android:iconTint="@color/primaryColor_red"
+        android:title="My리뷰" />
+    <item
+        android:id="@+id/page_4"
+        android:enabled="true"
+        android:icon="@drawable/ic_navi_4"
+        android:iconTint="@color/primaryColor_red"
+        android:title="My정보" />
+</menu>

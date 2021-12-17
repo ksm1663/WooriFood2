@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:layout_margin="5dp"
+    android:elevation="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/textReviewerStr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                android:text="작성자"
+                android:visibility="gone"
+                android:textColor="@color/primaryColor_blue"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/textUploadUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/primaryDarkColor_blue"
+                android:textStyle="bold"
+                android:text=""/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginTop="3dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:text="작성일"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textUploadDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="9999-99-99 (99:99:99)"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="맛"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="20dp"/>
+                    <RatingBar
+                        android:id="@+id/ratingTaste"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:theme="@style/RatingBar"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:gravity="center_horizontal|center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="가격"
+                    android:textSize="16dp"
+                    android:layout_marginEnd="5dp" />
+                <RadioButton
+                    android:id="@+id/radioPrice"
+                    android:button="@null"
+                    android:background="@drawable/custom_radiobutton"
+                    android:textColor="@drawable/custom_radiotext"
+                    android:textAlignment="center"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text=""
+                    android:enabled="false"
+                    android:fontFamily="@font/nanumsquareround"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="고급짐"
+                    android:textSize="16dp"
+                    android:layout_marginEnd="5dp" />
+                <RadioButton
+                    android:id="@+id/radioLuxury"
+                    android:button="@null"
+                    android:background="@drawable/custom_radiobutton"
+                    android:textColor="@drawable/custom_radiotext"
+                    android:textAlignment="center"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text=""
+                    android:enabled="false"
+                    android:fontFamily="@font/nanumsquareround"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="방문시간"
+                    android:textSize="16dp"
+                    android:layout_marginEnd="5dp" />
+                <RadioButton
+                    android:id="@+id/radioVisit"
+                    android:button="@null"
+                    android:background="@drawable/custom_radiobutton"
+                    android:textColor="@drawable/custom_radiotext"
+                    android:textAlignment="center"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text=""
+                    android:enabled="false"
+                    android:fontFamily="@font/nanumsquareround"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="혼잡도"
+                    android:textSize="16dp"
+                    android:layout_marginEnd="5dp" />
+                <RadioButton
+                    android:id="@+id/radioComplex"
+                    android:button="@null"
+                    android:background="@drawable/custom_radiobutton"
+                    android:textColor="@drawable/custom_radiotext"
+                    android:textAlignment="center"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text=""
+                    android:enabled="false"
+                    android:fontFamily="@font/nanumsquareround"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:id="@+id/textComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textColor="@color/primaryColor_red"
+                    android:text=""
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imageListInDetailView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "832058129490",
+    "firebase_url": "https://woorifood-3f025-default-rtdb.firebaseio.com",
+    "project_id": "woorifood-3f025",
+    "storage_bucket": "woorifood-3f025.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832058129490:android:01252111a78daa0afef38b",
+        "android_client_info": {
+          "package_name": "com.wooriss.woorifood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832058129490-1d07pc4lgsd18b5lun2mgaotlp0ea48j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wooriss.woorifood",
+            "certificate_hash": "99cd3c4e7875318f30c7eb7555210bc11d3ad124"
+          }
+        },
+        {
+          "client_id": "832058129490-gdt0hsi119e31qte69ikp9rihjcrghae.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wooriss.woorifood",
+            "certificate_hash": "c04858bf95c9d0eab9cf7731b4fa8a856056434a"
+          }
+        },
+        {
+          "client_id": "832058129490-sr2c306nqahjk7l31a0utcosqvsjcul6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_m4c4KqeGNpT1Sq0AmskIMjq7dtVHWzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832058129490-sr2c306nqahjk7l31a0utcosqvsjcul6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832058129490:android:ac99f349fa2d6d5efef38b",
+        "android_client_info": {
+          "package_name": "com.wooriss.woorifood2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832058129490-igrkvp52l4q60igi5pn6mk1l0r6jo8ue.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wooriss.woorifood2",
+            "certificate_hash": "c04858bf95c9d0eab9cf7731b4fa8a856056434a"
+          }
+        },
+        {
+          "client_id": "832058129490-sr2c306nqahjk7l31a0utcosqvsjcul6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_m4c4KqeGNpT1Sq0AmskIMjq7dtVHWzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832058129490-sr2c306nqahjk7l31a0utcosqvsjcul6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

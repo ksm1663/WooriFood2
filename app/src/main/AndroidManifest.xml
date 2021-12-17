@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wooriss.woorifood2">
+
+    <!-- 인터넷에서 파일을 다운로드 하기 위한 인터넷 퍼미션 추가   -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <!-- 사진 업로드 및 촬영을 위한 퍼미션 추가 -->
+    <!--갤러리 권한-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--갤러리 권한-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WooriFood2"
+        android:screenOrientation="portrait"
+        android:requestLegacyExternalStorage="true"
+        >
+
+<!--        android:hardwareAccelerated="false"-->
+
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activity.LoadingActivity">
+        </activity>
+
+        <activity
+            android:name=".MainActivity">
+        </activity>
+
+
+        <!-- 네이버맵 활용을 위한 KEY 추가 -->
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="pqe8e8b2e4" />
+
+    </application>
+</manifest>

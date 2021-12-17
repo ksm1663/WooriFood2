@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!-- 하단 탭(프래그먼트 이동메뉴바)를 외 나머지 공간 -->
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    </FrameLayout>
+
+    <!--    style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@color/primaryDarkColor_blue"
+        app:itemIconTint="@color/primaryColor_red"
+        app:itemTextColor="@color/primaryColor_red"
+        app:menu="@menu/bottom_navigation_menu" />
+</LinearLayout>

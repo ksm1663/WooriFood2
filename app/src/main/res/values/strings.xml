@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">WooriFood2</string>
+
+    <!-- Loading Activity-->
+    <string name="appLogoName">우리\n식당</string>
+    <string name="textIdHint">아이디</string>
+    <string name="textPwHint">비밀번호</string>
+    <string name="textCompanyHint">계열사</string>
+    <string name="btnLoginText">로그인</string>
+    <string name="btnJoinText">Join</string>
+    <string name="transitionNameJoinView">transitionNameJoinView</string>
+    <string name="popReqInputLogInfo">아이디/비밀번호를 입력하세요.</string>
+    <string name="popWelcome"> 님 반갑습니다!</string>
+    <string name="popFailLogin">로그인 실패. 다시 시도해주세요.</string>
+    <string name="popWrongMail">존재하지 않는 사용자입니다.</string>
+    <string name="popWrongPassword">비밀번호가 틀렸습니다.</string>
+
+    <!-- Join Fragment-->
+    <string name="jointitle">회원가입</string>
+    <string name="textPwHintToJoin">비밀번호 (7자 이상)</string>
+    <string name="textNameHint">이름</string>
+    <string name="textBranchHint">소속지점</string>
+    <string name="textPositionHint">직급</string>
+    <string name="btnJoinUsText">가입하기</string>
+    <string name="popReqInputJoinInfo">가입정보를 모두 입력하세요.</string>
+    <string name="popCreateSuccess">계정이 생성되었습니다!</string>
+    <string name="popCreateFailed">계정 생성이 실패했습니다. 다시 시도해주세요</string>
+    <string name="popAlreadyUser">이미 존재하는 회원입니다!</string>
+
+    <!-- Search Branch-->
+    <string name="textSearchBreanch">지점 검색</string>
+    <string name="textBrancSearchHint">지점명</string>
+
+    <!-- UserInfo or Common-->
+    <string name="textNoChanged">변경내역이 없습니다!</string>
+    <string name="textSaveSuccess">저장을 완료했습니다!</string>
+    <string name="textSaveFailed">저장 실패! 다시 시도해주세요</string>
+
+
+    <!-- Review Upload -->
+    <string name="textUpload">등록</string>
+    <string name="questTaste">음식은 맛있었나요?</string>
+    <string name="questPrice">가격은 적당한가요?</string>
+    <string name="questLuxury">고급스러움이 묻어나나요?</string>
+    <string name="questVisit">어느시간대쯤 방문하셨어요?</string>
+    <string name="questComplex">식당이 혹시 붐비진 않았나요?</string>
+    <string name="questCommentHint">기타 후기를 작성해주세요.</string>
+    <string name="popNeedReviewInfo">리뷰항목을 선택해주세요!</string>
+    <string name="popLoadingUploadReview">리뷰를 저장하고 있습니다..</string>
+
+    <!-- Search Sikdang -->
+    <string name="textSearchSikdang">검색</string>
+    <string name="textSearchHint">음식점 입력 (예:김밥천국)</string>
+    <string name="popNeedSikdang">음식점명을 입력하세요.</string>
+
+
+    <string-array name="domains">
+        <item>"@wooribank.com"</item>
+        <item>"@woorifg.com"</item>
+        <item>"@wooricard.com"</item>
+        <item>"@woorifcapital.com"</item>
+        <item>"@wooriib.com"</item>
+        <item>"@woorifis.com"</item>
+    </string-array>
+
+    <string-array name="positions">
+        <item>"행원"</item>
+        <item>"책임자"</item>
+        <item>"관리자"</item>
+        <item>"임원"</item>
+    </string-array>
+
+</resources>

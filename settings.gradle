@@ -1,0 +1,16 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+
+        // about NAVER Map API
+        maven { url 'https://naver.jfrog.io/artifactory/maven/'}
+        // 차트
+        maven { url 'https://jitpack.io'}
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "WooriFood2"
+include ':app'

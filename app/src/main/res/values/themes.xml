@@ -1,0 +1,228 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WooriFood2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+
+        <!-- Customize your theme here. -->
+        <!--  remove title bar, status bar   -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+
+        <!--  font  -->
+        <item name="android:textViewStyle">@style/customTextViewFontStyle</item>
+        <item name="android:buttonStyle">@style/customButtonFontStyle</item>
+        <item name="android:editTextStyle">@style/customEditTextFontStyle</item>
+        <item name="android:radioButtonStyle">@style/customRadioButtonFontStyle</item>
+        <item name="android:checkboxStyle">@style/customCheckboxFontStyle</item>
+
+    </style>
+
+
+    <!--  텍스트레이아웃 색상  -->
+    <style name="EditTextMyStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <item name="android:textSize">17dp</item>
+        <item name="fontFamily">@font/nanumsquareround</item>
+        <item name="android:textColor">@color/textPrimaryColor</item>
+        <item name="endIconTint">@color/textPrimaryColor</item>
+        <item name="maxLines">1</item>
+
+        <!--FilledBox일 경우 밑줄 색상, OutlinedBox일 경우 테두리 색상-->
+        <item name="boxBackgroundColor">@color/textBackgroundColor</item>
+        <item name="boxStrokeColor">@color/textPrimaryColor</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <!--Counter-->
+        <item name="counterTextAppearance">@style/CounterTextAppearance</item>
+        <!--EditText에 있을때의 Hint-->
+        <item name="android:textColorHint">@color/white</item>
+        <!--상단에 있을때의 Hint-->
+        <item name="hintTextColor">@color/white</item>
+        <item name="hintTextAppearance">@style/HintTextAppearance</item>
+        <!--Helper-->
+        <item name="helperTextTextAppearance">@style/HelperTextAppearance</item>
+        <!--Error-->
+        <item name="errorEnabled">false</item>
+        <item name="colorError">@color/textPrimaryColor</item>
+        <item name="errorIconDrawable">@android:color/transparent</item>
+        <item name="errorTextAppearance">@style/ErrorTextAppearance</item>
+    </style>
+
+    <style name="ErrorTextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="HintTextAppearance">
+        <item name="android:fontFamily">@font/nanumsquareround</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="HelperTextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="fontFamily">@font/nanumsquareround</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="CounterTextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextInputEditTextStyle">
+        <item name="android:textStyle">normal</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+
+    <!-- 텍스트레이아웃 - 아웃라인 버전 -->
+    <!--  텍스트레이아웃 색상  -->
+    <style name="EditTextMyStyleOutline" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <item name="android:textSize">17dp</item>
+        <item name="fontFamily">@font/nanumsquareround</item>
+        <item name="android:textColor">@color/primaryDarkColor_blue</item>
+        <item name="endIconTint">@color/textPrimaryColor</item>
+        <item name="maxLines">1</item>
+
+        <!--OutlinedBox일 경우 테두리 색상-->
+        <item name="boxStrokeColor">@color/primaryColor_red</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <!--Counter-->
+        <item name="counterTextAppearance">@style/CounterTextAppearance</item>
+        <!--EditText에 있을때의 Hint-->
+        <item name="android:textColorHint">@color/textPrimaryColor</item>
+        <!--상단에 있을때의 Hint-->
+        <item name="hintTextColor">@color/textPrimaryColor</item>
+        <item name="hintTextAppearance">@style/HintTextAppearanceOutline</item>
+        <!--Helper-->
+        <item name="helperTextTextAppearance">@style/HelperTextAppearance</item>
+        <!--Error-->
+        <item name="errorEnabled">false</item>
+        <item name="colorError">@color/textPrimaryColor</item>
+        <item name="errorIconDrawable">@android:color/transparent</item>
+        <item name="errorTextAppearance">@style/ErrorTextAppearance</item>
+    </style>
+    <style name="HintTextAppearanceOutline">
+        <item name="android:fontFamily">@font/nanumsquareround</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <!--  드롭다운메뉴 색상  -->
+    <style name="DropdownMyStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/textBackgroundColor</item>
+        <item name="boxStrokeColor">@color/textPrimaryColor</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="endIconTint">@color/textPrimaryColor</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/textPrimaryColor</item>
+        <item name="expandedHintEnabled">false</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="maxLines">1</item>
+        <item name="android:imeOptions">actionNone</item>
+        <item name="android:inputType">none</item>
+    </style>
+
+
+    <!--  드롭다운메뉴 색상 : 아웃라인 버전   -->
+    <style name="DropdownMyStyleOutline" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeColor">@color/textPrimaryColor</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextColor">@color/textPrimaryColor</item>
+        <item name="endIconTint">@color/textPrimaryColor</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/textBackgroundColor</item>
+        <item name="expandedHintEnabled">false</item>
+        <item name="android:textColorHint">@color/textPrimaryColor</item>
+        <item name="colorOnBackground">>@color/white</item>
+        <item name="maxLines">1</item>
+        <item name="android:imeOptions">actionNone</item>
+        <item name="android:inputType">none</item>
+    </style>
+
+
+
+    <!-- 버튼 스타일 -->
+    <style name="ButtonMyStyle" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="cornerRadius">20dp</item>
+        <item name="backgroundTint">@color/ButtonPrimaryColor</item>
+        <item name="fontFamily">@font/nanumsquareround</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonMyStyleOutLine" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">20dp</item>
+        <item name="strokeColor">@color/ButtonPrimaryColor</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="rippleColor">@color/ButtonPrimaryColor</item>
+        <item name="fontFamily">@font/nanumsquareround</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ButtonPrimaryColor</item>
+    </style>
+
+
+    <!-- FAB 버튼 스타일 -->
+    <style name="FloatActionMyStyleOutLine" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="strokeColor">@color/white</item>
+        <item name="backgroundTint">@color/FloatActionPrimaryColor</item>
+        <item name="rippleColor">@color/white</item>
+        <item name="tint">@color/textBackgroundColor</item>
+    </style>
+
+
+    <!-- 카드뷰 -->
+    <style name="CardViewMyStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/CardViewPrimaryColor</item>
+        <item name="rippleColor">@color/primaryColor_blue</item>
+
+    </style>
+
+
+
+    <!-- etc -->
+    <style name="TextAppearance.WooriFood.Title" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primaryDarkColor_blue</item>
+    </style>
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/primaryLightColor_blue</item>
+        <item name="colorControlActivated">@color/yello</item>
+    </style>
+
+    <style name="RatingBarInReview" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/primaryVeryLightColor_blue</item>
+        <item name="colorControlActivated">@color/primaryColor_red</item>
+    </style>
+
+
+
+
+
+
+
+</resources>

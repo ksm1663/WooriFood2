@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="yello">#FFFFBB33</color>
+
+    <!--    //블랙에 약간 블루-->
+    <color name="black_blue">#FF07102F</color>
+    <!--    //블랙 + 화이트 2-->
+    <color name="black_ww">#FF07102F</color>
+    <!--    //블랙 + 화이트 3-->
+    <color name="black_www">#FF07102F</color>
+    <!--    //블랙 + 화이트 4-->
+    <color name="black_wwww">#FF07102F</color>
+
+
+
+
+    <color name="primaryColor_blue">#0c284f</color>
+    <color name="primaryMidColor_blue">#133B73</color>
+    <color name="primaryLightColor_blue">#3d507b</color>
+    <color name="primaryVeryLightColor_blue">#576688</color>
+    <color name="primaryDarkColor_blue">#000027</color>
+    <color name="primaryTextColor_blue">#ffffff</color>
+    <color name="primaryColor_red">#BE2859</color>
+
+    <color name="primaryTransparent_blue">#000027</color>
+
+
+
+    <color name="textBackgroundColor">#FD000027</color>
+    <color name="textPrimaryColor">#BE2859</color>
+
+    <color name="ButtonPrimaryColor">#BE2859</color>
+    <color name="ButtonTextColor">#ffffff</color>
+
+    <color name="FloatActionPrimaryColor">#BE2859</color>
+
+    <color name="AppBarPrimaryColor">#BE2859</color>
+
+    <color name="CardViewPrimaryColor">#FD000027</color>
+
+    <color name="NonColor">#00ff0000</color>
+</resources>
+
+
+    <!--
+            투명도
+            100% — FF
+            90% — E6
+            80% — CC
+            70% — B3
+            60% — 99
+            50% — 80
+            40% — 66
+            30% — 4D
+            20% — 33
+            10% — 1A
+            0% — 00
+            -->

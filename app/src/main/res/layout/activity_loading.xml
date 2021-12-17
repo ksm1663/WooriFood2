@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layLoadingMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryDarkColor_blue">
+
+
+    <FrameLayout
+        android:id="@+id/layLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="50dp">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/progressLoading"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:cpb_background_progressbar_color="@color/primaryDarkColor_blue"
+            app:cpb_background_progressbar_width="4dp"
+            app:cpb_progress="0"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progressbar_color="@color/primaryColor_red"
+            app:cpb_progressbar_width="10dp"
+            app:cpb_round_border="true"
+            app:cpb_start_angle="180" />
+
+        <!--        app:lottie_autoPlay="true"-->
+        <!--        app:lottie_loop="true"-->
+        <!--        app:lottie_rawRes="@raw/js_loadingimage"-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lotLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:lottie_loop="true" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnOpenJoin"
+            style="@style/FloatActionMyStyleOutLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_baseline_add_24" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="55dp"
+            android:text="@string/appLogoName"
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor_blue"
+            android:textSize="100sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/layInputLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/EditTextMyStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:hint="@string/textIdHint"
+                    app:helperText="">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textMail"
+                        style="@style/EditTextMyStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:imeOptions="actionDone"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/DropdownMyStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:hint="@string/textCompanyHint">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/dropdownDomain"
+                        style="@style/DropdownMyStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        tools:ignore="LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/EditTextMyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/textPwHint"
+                app:endIconMode="password_toggle"
+                app:helperText="">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textPassword"
+                    style="@style/EditTextMyStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
+                style="@style/ButtonMyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="3dp"
+                android:text="@string/btnLoginText" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginStart="-60dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:rotation="45"
+                android:src="@drawable/ic_food_pizza"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/ic_food_salad"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/ic_food_rice"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/ic_food_burger"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/layJoinViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</FrameLayout>

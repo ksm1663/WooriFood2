@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layUserInfoMain"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|left"
+            android:layout_marginBottom="20dp"
+            android:text="안녕하세요"
+            android:lines="2"
+            android:textAppearance="@style/TextAppearance.WooriFood.Title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_text_input"
+            android:layout_marginTop="10dp"
+            style="@style/EditTextMyStyleOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:inputType="none"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/branch_text_input"
+            android:layout_marginTop="10dp"
+            style="@style/EditTextMyStyleOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:helperText="helper"
+            android:hint="소속지점">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/branch_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:inputType="none"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/primaryMidColor_blue"
+                android:maxLines="1"
+                android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/class_text_input"
+            android:layout_marginTop="10dp"
+            style="@style/DropdownMyStyleOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="직급">
+
+            <AutoCompleteTextView
+                android:id="@+id/class_text_view"
+                android:layout_width="match_parent"
+                android:textColor="@color/primaryMidColor_blue"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save_button"
+                android:layout_marginTop="10dp"
+                style="@style/ButtonMyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="저장" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
